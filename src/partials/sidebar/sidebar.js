@@ -21,25 +21,27 @@ function SideBar() {
         </a>
 
         <div className="avatar">
-          <img src="https://joaquindecima.gitlab.io/assets/img/myphoto.jpg" />
+          <img
+            src="https://joaquindecima.gitlab.io/assets/img/myphoto.jpg"
+            alt="Joaquin Decima" />
         </div>
 
         <span className="title p-color">Joaquin Decima</span>
-        <span className="subtitle p-color">Programador</span>
+        <span className="subtitle p-color">Software Developer</span>
       </div>
 
       <ul className="sidebar-menu">
         <li className="group-title">Sobre Mi</li>
-        <li><a routerLink=""><span className="mif-home icon"></span>Mi Sitio</a></li>
-        <li><a routerLink="studies"><span className="mif-books icon"></span>Linkedin</a></li>
+        <li><a target="_blank" href="https://joaquindecima.gitlab.io/"><span className="mif-home icon"></span>Mi Sitio</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/joaquindecima/"><span className="mif-linkedin icon"></span>Linkedin</a></li>
 
         <li className="group-title">Otros</li>
-        <li><a routerLink="portfolio"><span className="mif-suitcase icon"></span>Blog</a></li>
+        <li><a target="_blank" href="https://patojad.com.ar/"><span className="mif-blogger icon"></span>Blog</a></li>
 
         <li className="group-title">Contacto</li>
-        <li><a routerLink="projects"><span className="mif-create-new-folder icon"></span>Telegram</a></li>
-        <li><a routerLink="projects"><span className="mif-create-new-folder icon"></span>WhatsApp</a></li>
-        <li><a routerLink="projects"><span className="mif-create-new-folder icon"></span>Email</a></li>
+        <li><a target="_blank" href="https://t.me/PatoJAD"><span className="mif-paper-plane icon"></span>Telegram</a></li>
+        <li><a target="_blank" href="https://api.whatsapp.com/send?phone=541160109950&text=Gracias%20por%20comunicarte.%20%C2%BFEn%20que%20puedo%20ayudarte%3F"><span className="mif-whatsapp icon"></span>WhatsApp</a></li>
+        <li><a target="_blank" href="mailto:joaquin.decima@gmail.com"><span className="mif-mail icon"></span>Email</a></li>
       </ul>
     </aside>
   );

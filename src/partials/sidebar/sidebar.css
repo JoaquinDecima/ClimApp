@@ -17,3 +17,7 @@
   font-weight: bold;
   font-size: 20px;
 }
+
+.sidebar-menu li a:hover{
+  color: #74D9B1;
+}

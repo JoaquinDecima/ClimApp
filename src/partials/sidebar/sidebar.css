@@ -1,0 +1,19 @@
+.sidebar{
+  background: rgba(0,0,0,0.6);
+  color: #FFF;
+}
+
+.sidebar-menu{
+  color: #FFF;
+}
+
+.sidebar-header{
+  border-bottom: 3px solid #74D9B1;
+  font-weight: bold;
+}
+
+.sidebar-menu .group-title{
+  color: #74D9B1;
+  font-weight: bold;
+  font-size: 20px;
+}

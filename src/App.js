@@ -8,11 +8,13 @@ import {
 } from "react-router-dom";
 
 import NavBar from './partials/navbar/navbar.js';
+import SideBar from './partials/sidebar/sidebar.js';
 
 function App() {
   return (
     <Router>
       <NavBar />
+      <SideBar />
 
       <Switch>
         <Redirect from='*' to='/404' />

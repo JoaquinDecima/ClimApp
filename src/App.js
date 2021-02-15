@@ -7,6 +7,7 @@ import {
   Redirect
 } from "react-router-dom";
 
+import Space from './components/space/space.js';
 import Footer from './partials/footer/footer.js';
 import NavBar from './partials/navbar/navbar.js';
 import SideBar from './partials/sidebar/sidebar.js';
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <NavBar />
+      <Space />
       <SideBar />
 
       <Switch>

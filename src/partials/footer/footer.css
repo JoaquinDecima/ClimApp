@@ -38,8 +38,9 @@ h3{
   font-size: 22px;
 }
 
-a{
-  color: #74D9B1 !important;
+.a-foot{
+  color: #74D9B1;
+  text-decoration: none;
 }
 
 a:hover{

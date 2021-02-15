@@ -5,7 +5,7 @@ nav{
 }
 
 .app-bar .brand, .app-bar .app-bar-menu{
-  background-color: rgba(0,0,0,0)
+  background-color: rgba(0,0,0,0);
 }
 
 .hamburger .line, .nav-button .line{
@@ -14,4 +14,10 @@ nav{
 
 .app-bar-expand .app-bar-menu.collapsed{
   margin-left: auto;
+}
+
+.bar-button{
+  background-color: rgba(0,0,0,0);
+  color: #FFF;
+  border-width: 0px;
 }

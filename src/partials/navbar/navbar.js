@@ -14,7 +14,11 @@ function NavBar() {
       <ul className="app-bar-menu">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Provincias</a></li>
-        <li><a href="#">Sobre Mi</a></li>
+        <li>
+          <button className="bar-button" id="openMenu">
+            Sobre Mi
+          </button>
+        </li>
       </ul>
     </nav>
   );

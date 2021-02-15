@@ -7,6 +7,7 @@ import {
   Redirect
 } from "react-router-dom";
 
+import Footer from './partials/footer/footer.js';
 import NavBar from './partials/navbar/navbar.js';
 import SideBar from './partials/sidebar/sidebar.js';
 
@@ -20,6 +21,7 @@ function App() {
         <Redirect from='*' to='/404' />
       </Switch>
 
+      <Footer />
     </Router>
 
   );

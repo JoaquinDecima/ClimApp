@@ -1,5 +1,6 @@
 .sidebar{
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
   color: #FFF;
 }
 

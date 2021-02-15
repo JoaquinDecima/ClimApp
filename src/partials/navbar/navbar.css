@@ -1,5 +1,6 @@
 nav{
-  background-color: rgba(0,0,0,0.6) !important;
+  background-color: rgba(0,0,0,0.75) !important;
+  backdrop-filter: blur(6px);
   border-bottom: 3px solid #74D9B1;
   color: #FFF;
 }

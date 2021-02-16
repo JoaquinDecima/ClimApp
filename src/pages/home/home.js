@@ -3,6 +3,7 @@ import API from '../../services/api.js';
 
 import './home.css';
 import CurrentTemp from '../../components/currenttemp/currenttemp.js';
+import MinMax from '../../components/minmax/minmax.js';
 
 function Home() {
   const [data, setData] = React.useState({
@@ -14,7 +15,9 @@ function Home() {
       }
     ],
     "main":{
-      "temp":0
+      "temp":0,
+      "temp_max":0,
+      "temp_min":0
     }
   });
   var img =
@@ -38,7 +41,9 @@ function Home() {
           city={data.name}
           temp={data.main.temp}
           description={data.weather[0].description.charAt(0).toUpperCase().concat(data.weather[0].description.slice(1))} />
-
+        <MinMax
+          min={data.main.temp_min}
+          max={data.main.temp_max} />
       </div>
     </div>
   );

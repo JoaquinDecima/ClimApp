@@ -5,8 +5,8 @@ import './currenttemp.css';
 function CurrentTemp(props) {
 
   return (
-    <div className="cell-md-6 cli-card">
-      <div className="container-fluid">
+    <div className="cell-md-6 cli-cont">
+      <div className="container-fluid cli-card">
         <div className="row">
 
           <div className="cell-md-12">

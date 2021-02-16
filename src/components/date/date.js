@@ -5,7 +5,7 @@ function DateFecha(props) {
   const ye = new Intl.DateTimeFormat('es', { year: 'numeric' }).format(d);
   const mo = new Intl.DateTimeFormat('es', { month: 'long' }).format(d);
   const dad = new Intl.DateTimeFormat('es', { day: '2-digit' }).format(d);
-    const da = new Intl.DateTimeFormat('es', { weekday: "long" }).format(d);
+  const da = new Intl.DateTimeFormat('es', { weekday: "long" }).format(d);
 
   return (
     <div data-size="wide" data-role="tile" className="text-center cli-card">

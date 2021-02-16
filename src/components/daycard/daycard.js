@@ -12,7 +12,7 @@ function DayCard(props) {
       <div className="row">
 
         <div className="cell-2 mg-auto">
-          <h5 className="h5-clim">{sday.charAt(0).toUpperCase().concat(sday.slice(1))}<br /><span className="daynum">{nday}</span></h5>
+          <h5 className="h5-clim mg-auto">{sday.charAt(0).toUpperCase().concat(sday.slice(1))}<br /><span className="daynum">{nday}</span></h5>
         </div>
 
         <div className="cell-1 mg-auto">

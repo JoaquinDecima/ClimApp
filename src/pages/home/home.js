@@ -5,6 +5,7 @@ import './home.css';
 import CurrentTemp from '../../components/currenttemp/currenttemp.js';
 import Humidity from '../../components/humidity/humidity.js';
 import MinMax from '../../components/minmax/minmax.js';
+import WindSpeed from '../../components/windspeed/windspeed.js';
 
 function Home() {
   const [data, setData] = React.useState({
@@ -20,6 +21,9 @@ function Home() {
       "temp_max":0,
       "temp_min":0,
       "humidity":0
+    },
+    "wind":{
+      "speed":0
     }
   });
   var img =
@@ -46,8 +50,8 @@ function Home() {
         <MinMax
           min={data.main.temp_min}
           max={data.main.temp_max} />
-        <Humidity
-          humidity={data.main.humidity} />
+        <Humidity humidity={data.main.humidity} />
+        <WindSpeed viento={data.wind.speed} />
       </div>
     </div>
   );

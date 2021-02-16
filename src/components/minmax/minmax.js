@@ -10,12 +10,12 @@ function MinMax(props) {
         <div className="row">
 
           <div className="cell-6">
-            <h3>Maxima</h3>
+            <h3>Máxima</h3>
             <span className="temp-mediun">{Math.trunc(props.max)}<span class="mif-celsius"></span></span>
           </div>
 
           <div className="cell-6">
-            <h3>Minima</h3>
+            <h3>Mínima</h3>
             <span className="temp-mediun">{Math.trunc(props.min)}<span class="mif-celsius"></span></span>
           </div>
 

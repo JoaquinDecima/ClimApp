@@ -29,8 +29,9 @@ function Footer() {
             APIs utilizadas para este proyecto, recomiendo leer la documentación de las mismas.
             </p>
             <ul className="ul-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Home</a></li>
+              <li><a target="_blank" href="https://openweathermap.org/">OpenWeather</a></li>
+              <li><a target="_blank" href="http://ip-api.com/">IP-API</a></li>
+              <li><a target="_blank" href="https://datos.gob.ar/apis">Datos Gob AR</a></li>
             </ul>
           </div>
 

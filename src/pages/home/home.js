@@ -47,20 +47,26 @@ function Home() {
 
 
   return (
-    <div className="container">
-      <div class="tiles-grid" >
-        <CurrentTemp
-          img={'http://openweathermap.org/img/wn/'.concat(data.hoy.weather[0].icon).concat('@2x.png')}
-          city={data.hoy.name}
-          temp={data.hoy.main.temp}
-          description={data.hoy.weather[0].description.charAt(0).toUpperCase().concat(data.hoy.weather[0].description.slice(1))} />
-        <DateFecha />
-        <WindSpeed viento={data.hoy.wind.speed} />
-        <Map url={'https://embed.windy.com/embed2.html?lat='.concat(data.hoy.coord.lat).concat('&lon=').concat(data.hoy.coord.lon).concat('&detailLat=').concat(data.hoy.coord.lat).concat('&detailLon=').concat(data.hoy.coord.lon).concat('&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1')}/>
-        <Humidity humidity={data.hoy.main.humidity} />
-        <MinMax
-          min={data.hoy.main.temp_min}
-          max={data.hoy.main.temp_max} />
+    <div className="container-fluid">
+      <div className="row">
+
+        <div className="cell-md-6">
+          <div className="tiles-grid" >
+            <DateFecha />
+            <CurrentTemp
+            img={'http://openweathermap.org/img/wn/'.concat(data.hoy.weather[0].icon).concat('@2x.png')}
+              city={data.hoy.name}
+              temp={data.hoy.main.temp}
+              description={data.hoy.weather[0].description.charAt(0).toUpperCase().concat(data.hoy.weather[0].description.slice(1))} />
+            <MinMax
+              min={data.hoy.main.temp_min}
+              max={data.hoy.main.temp_max} />
+            <Map url={'https://embed.windy.com/embed2.html?lat='.concat(data.hoy.coord.lat).concat('&lon=').concat(data.hoy.coord.lon).concat('&detailLat=').concat(data.hoy.coord.lat).concat('&detailLon=').concat(data.hoy.coord.lon).concat('&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1')}/>
+            <WindSpeed viento={data.hoy.wind.speed} />
+            <Humidity humidity={data.hoy.main.humidity} />
+          </div>
+        </div>
+        
       </div>
     </div>
   );

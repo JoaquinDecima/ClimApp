@@ -16,7 +16,7 @@ function SideBar() {
         data-image="https://i.postimg.cc/q796pYZ2/fotoefectos-com.jpg">
 
         <a href="/" className="fg-white sub-action"
-           onclick="Metro.sidebar.close('#sdbar'); return false;">
+           onClick="Metro.sidebar.close('#sdbar'); return false;">
           <span className="mif-arrow-left mif-2x"></span>
         </a>
 

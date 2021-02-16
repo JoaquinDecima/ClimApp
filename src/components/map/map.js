@@ -5,9 +5,9 @@ function Map(props) {
   return (
     <div data-size="large" data-role="tile" className="cli-card">
       <iframe
-        class="map-ifm"
+        className="map-ifm"
         src={props.url}
-        frameborder="0">
+        frameBorder="0">
       </iframe>
     </div>
   );

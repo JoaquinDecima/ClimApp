@@ -46,7 +46,7 @@ function Footer() {
           </div>
 
           <div className="cell-12 text-center">
-            ClimApp <span class="copyleft">&copy;</span> <a className="a-foot" href="https://joaquindecima.gitlab.io">Joaquin (Pato) Decima</a>
+            ClimApp <span className="copyleft">&copy;</span> <a className="a-foot" href="https://joaquindecima.gitlab.io">Joaquin (Pato) Decima</a>
           </div>
 
         </div>

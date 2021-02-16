@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# ClimApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este desafío se dio como parte de una oportunidad laboral en Telecom Argentina.
 
-## Available Scripts
+## Frontend Test
 
-In the project directory, you can run:
+Preferentemente desarrollar en **React.js**, como alternativa Vue.js o Angular.
 
-### `yarn start`
+Desarrollar una app full client-side que permita visualizar el pronóstico climático actual y de los próximos 5 días en la ubicación actual y permita visualizar el pronóstico de otras 5 ciudades seleccionables.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Se debe idear y diseñar la UI que se considere mas acorde (No se valoran habilidades de diseño, sino de uso de componentes). Los datos deben ser consumidos de la API desarrollada (en caso de que la prueba lo requiera) o la API externa (Si solo se evalúa Front).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Adicionales
 
-### `yarn test`
+Adicionalmente a los recursos sugeridos hacemos uso de recursos adicionales para simplificar o mejorar el servicio, a continuación detallamos estos recursos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### MetroUI
 
-### `yarn build`
+Metro 4 es una impresionante biblioteca de componentes gratuita de código abierto construida en html, css, javascript.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://metroui.org.ua/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Servidor de Pruebas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Como método más cómodo para poder apreciar el trabajo final se decidió publicar el proyecto en servicios gratuitos que permitan mostrar el trabajo realizado como un producto final. En este caso podemos encontrar el Front en la siguiente URL
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://joaquindecima.gitlab.io/ClimApp/

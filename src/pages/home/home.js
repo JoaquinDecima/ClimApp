@@ -53,12 +53,10 @@ function Home() {
   React.useEffect(() => {
     const setClima = async () => {
       const result = await API.current();
-      console.log(result);
       setData(result);
     };
     const setClimasNext = async () => {
       const result = await API.next();
-      console.log(result);
       setNexts(result);
     };
     setClima();

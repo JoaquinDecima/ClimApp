@@ -56,12 +56,10 @@ function City() {
   React.useEffect(() => {
     const setClima = async () => {
       const result = await API.currentcity(id);
-      console.log(result);
       setData(result);
     };
     const setClimasNext = async () => {
       const result = await API.nextcity(id);
-      console.log(result);
       setNexts(result);
     };
     setClima();

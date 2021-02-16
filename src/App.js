@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   HashRouter as Router,
@@ -8,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Space from './components/space/space.js';
+import Home from './pages/home/home.js';
 import Footer from './partials/footer/footer.js';
 import NavBar from './partials/navbar/navbar.js';
 import SideBar from './partials/sidebar/sidebar.js';
@@ -20,6 +20,7 @@ function App() {
       <SideBar />
 
       <Switch>
+        <Route path="/" component={Home} />
         <Redirect from='*' to='/404' />
       </Switch>
 

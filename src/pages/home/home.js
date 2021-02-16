@@ -8,6 +8,7 @@ import DayCard from '../../components/daycard/daycard.js';
 import Humidity from '../../components/humidity/humidity.js';
 import Map from '../../components/map/map.js';
 import MinMax from '../../components/minmax/minmax.js';
+import Search from '../../components/search/search.js';
 import WindSpeed from '../../components/windspeed/windspeed.js';
 
 function Home() {
@@ -69,6 +70,10 @@ function Home() {
     <div className="container-fluid">
       <div className="row">
 
+        <div className="cell-12">
+          <Search />
+        </div>
+
         <div className="cell-md-6">
           <div className="tiles-grid" >
             <DateFecha />
@@ -80,7 +85,7 @@ function Home() {
             <MinMax
               min={data.main.temp_min}
               max={data.main.temp_max} />
-            <Map url={'https://embed.windy.com/embed2.html?lat='.concat(data.coord.lat).concat('&lon=').concat(data.coord.lon).concat('&detailLat=').concat(data.coord.lat).concat('&detailLon=').concat(data.coord.lon).concat('&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1')}/>
+            <Map url={'https://embed.windy.com/embed2.html?lat='.concat(data.coord.lat).concat('&lon=').concat(data.coord.lon).concat('&detailLat=').concat(data.coord.lat).concat('&detailLon=').concat(data.coord.lon).concat('&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1')}/>
             <WindSpeed viento={data.wind.speed} />
             <Humidity humidity={data.main.humidity} />
           </div>

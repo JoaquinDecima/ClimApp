@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 import './navbar.css';
-import Search from '../../components/search/search.js'
 
 function NavBar() {
 
@@ -11,8 +10,6 @@ function NavBar() {
       <a href="#" className="brand no-hover">
         ClimApp
       </a>
-
-      <Search />
 
       <ul className="app-bar-menu">
         <li><a href="#">Inicio</a></li>

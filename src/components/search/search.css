@@ -1,0 +1,42 @@
+.color-picker, .file, .input, .metro-input, .select, .spinner, .tag-input, .textarea{
+  border: 0px #000 solid;
+  color: #74D9B1;
+  background: rgba(0,0,0,0.75);
+}
+
+.select .drop-container{
+  background: rgba(0,0,0,0.75);
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.input input{
+  border: 1px solid #74D9B1 !important;
+}
+
+.select .button{
+  color: #74D9B1;
+}
+
+.default-icon-cross{
+  color: #74D9B1;
+  fill: #74D9B1;
+}
+
+.select .option-list{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.select .option-list li.active{
+  background-color: #74D9B1;
+}
+
+.select .option-list a, .select .option-list li{
+  border-bottom: 1px solid #74D9B1 !important;
+}
+
+.dropdown-toggle::before{
+  border-color: #74D9B1;
+}

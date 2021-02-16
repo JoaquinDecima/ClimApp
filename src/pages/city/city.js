@@ -55,12 +55,12 @@ function City() {
 
   React.useEffect(() => {
     const setClima = async () => {
-      const result = await API.currentcity();
+      const result = await API.currentcity(id);
       console.log(result);
       setData(result);
     };
     const setClimasNext = async () => {
-      const result = await API.nextcity();
+      const result = await API.nextcity(id);
       console.log(result);
       setNexts(result);
     };
@@ -84,7 +84,7 @@ function City() {
             <MinMax
               min={data.main.temp_min}
               max={data.main.temp_max} />
-            <Map url={'https://embed.windy.com/embed2.html?lat='.concat(data.coord.lat).concat('&lon=').concat(data.coord.lon).concat('&detailLat=').concat(data.coord.lat).concat('&detailLon=').concat(data.coord.lon).concat('&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1')}/>
+            <Map url={'https://embed.windy.com/embed2.html?lat='.concat(data.coord.lat).concat('&lon=').concat(data.coord.lon).concat('&detailLat=').concat(data.coord.lat).concat('&detailLon=').concat(data.coord.lon).concat('&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1')}/>
             <WindSpeed viento={data.wind.speed} />
             <Humidity humidity={data.main.humidity} />
           </div>

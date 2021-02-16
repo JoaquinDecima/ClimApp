@@ -3,6 +3,7 @@ import API from '../../services/api.js';
 
 import './home.css';
 import CurrentTemp from '../../components/currenttemp/currenttemp.js';
+import Humidity from '../../components/humidity/humidity.js';
 import MinMax from '../../components/minmax/minmax.js';
 
 function Home() {
@@ -17,7 +18,8 @@ function Home() {
     "main":{
       "temp":0,
       "temp_max":0,
-      "temp_min":0
+      "temp_min":0,
+      "humidity":0
     }
   });
   var img =
@@ -34,7 +36,7 @@ function Home() {
 
   return (
     <div className="container">
-      <div className="row">
+      <div className="row" >
 
         <CurrentTemp
           img={'http://openweathermap.org/img/wn/'.concat(data.weather[0].icon).concat('@2x.png')}
@@ -44,6 +46,8 @@ function Home() {
         <MinMax
           min={data.main.temp_min}
           max={data.main.temp_max} />
+        <Humidity
+          humidity={data.main.humidity} />
       </div>
     </div>
   );

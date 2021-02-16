@@ -1,0 +1,19 @@
+.cli-card{
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+  color: #FFF;
+  padding: 20px;
+  border-bottom: 3px solid #74D9B1;
+}
+
+h2{
+  color: #74D9B1;
+}
+
+.temp-mediun{
+  font-size: 30px;
+}
+
+.cli-cont{
+  padding: 10px;
+}

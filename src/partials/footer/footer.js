@@ -10,7 +10,7 @@ function Footer() {
       <div className="container-fluid">
         <div className="row">
 
-          <div className="cell-md-6 foot-section">
+          <div className="cell-md-8 foot-section">
             <h3>ClimApp</h3>
             <p className="text-just">
             La siguiente prueba plantea el desarrollo de una aplicación de consulta de clima que pueda visualizar el pronóstico actual, próximos 5 días para la ciudad actual y de otras 5 ciudades seleccionables.
@@ -23,7 +23,7 @@ function Footer() {
             </p>
           </div>
 
-          <div className="cell-md-3 text-center foot-section">
+          <div className="cell-md-4 text-center foot-section">
             <h3>APIs Usadas</h3>
             <p className="text-just">
             APIs utilizadas para este proyecto, recomiendo leer la documentación de las mismas.
@@ -35,16 +35,6 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="cell-md-3 text-center foot-section">
-            <h3>No Tocar</h3>
-            <p className="text-just">
-            La curiosidad mató al gato, yo te recomiendo no tocar...
-            </p>
-            <ul className="ul-list">
-              <li><a href="#">¿Estás seguro?</a></li>
-              <li><a href="#">Yo no lo haría</a></li>
-            </ul>
-          </div>
 
           <div className="cell-12 text-center">
             ClimApp <span className="copyleft">&copy;</span> <a className="a-foot" href="https://joaquindecima.gitlab.io">Joaquin (Pato) Decima</a>

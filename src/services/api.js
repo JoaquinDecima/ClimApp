@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const server = 'https://climappjdecima.herokuapp.com/v1/';
+const server = 'http://181.31.84.158:3030/v1/';
 
 const API = {
   current: () => axios.get(`${server}current/`)

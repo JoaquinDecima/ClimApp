@@ -19,9 +19,3 @@ Adicionalmente a los recursos sugeridos hacemos uso de recursos adicionales para
 Metro 4 es una impresionante biblioteca de componentes gratuita de código abierto construida en html, css, javascript.
 
 https://metroui.org.ua/
-
-## Servidor de Pruebas
-
-Como método más cómodo para poder apreciar el trabajo final se decidió publicar el proyecto en servicios gratuitos que permitan mostrar el trabajo realizado como un producto final. En este caso podemos encontrar el Front en la siguiente URL
-
-https://joaquindecima.gitlab.io/ClimApp/

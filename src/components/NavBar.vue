@@ -46,4 +46,10 @@ export default {
   background-color: rgba(20,20,20,0.6) !important;
   backdrop-filter: blur(6px);
 }
+
+nav{
+  margin: 5px;
+  border-bottom: 3px solid #74D9B1;
+  border-radius: 12px;
+}
 </style>

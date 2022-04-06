@@ -1,21 +1,35 @@
 # ClimApp
 
-Este desafío se dio como parte de una oportunidad laboral en Telecom Argentina.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Frontend Test
+## Recommended IDE Setup
 
-Preferentemente desarrollar en **React.js**, como alternativa Vue.js o Angular.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
 
-Desarrollar una app full client-side que permita visualizar el pronóstico climático actual y de los próximos 5 días en la ubicación actual y permita visualizar el pronóstico de otras 5 ciudades seleccionables.
+## Customize configuration
 
-Se debe idear y diseñar la UI que se considere mas acorde (No se valoran habilidades de diseño, sino de uso de componentes). Los datos deben ser consumidos de la API desarrollada (en caso de que la prueba lo requiera) o la API externa (Si solo se evalúa Front).
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Adicionales
+## Project Setup
 
-Adicionalmente a los recursos sugeridos hacemos uso de recursos adicionales para simplificar o mejorar el servicio, a continuación detallamos estos recursos.
+```sh
+npm install
+```
 
-#### MetroUI
+### Compile and Hot-Reload for Development
 
-Metro 4 es una impresionante biblioteca de componentes gratuita de código abierto construida en html, css, javascript.
+```sh
+npm run dev
+```
 
-https://metroui.org.ua/
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```

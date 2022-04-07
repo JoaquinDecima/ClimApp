@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 cities">
+  <div class="col-12 cities" @change="setCity($event)">
     <select class="form-select text-center" aria-label="Default select example">
       <option selected>Seleccione otra ciudad</option>
       <option value="Buenos%20Aires">Buenos Aires</option>
@@ -18,7 +18,12 @@
 
 <script>
 export default {
-  name: "cities"
+  name: "cities",
+  methods: {
+    setCity(event){
+      window.location.href = `https://joaquindecima.github.io/ClimApp/?city=${event.target.value}`
+    }
+  }
 }
 </script>
 

@@ -9,6 +9,7 @@
             <TodayDate/>
             <MinMaxTemp/>
             <TodayWeather/>
+            <TodayWind/>
           </div>
         </div>
       </div>
@@ -26,9 +27,10 @@ import NexDaysTable from "../modules/NexDaysTable.vue";
 import TodayDate from "../modules/TodayDate.vue";
 import MinMaxTemp from "../modules/MinMaxTemp.vue";
 import TodayWeather from "../modules/TodayWeather.vue";
+import TodayWind from "../modules/TodayWind.vue";
 export default {
   name: "Home",
-  components: {TodayWeather, MinMaxTemp, TodayDate, NexDaysTable, Cities}
+  components: {TodayWind, TodayWeather, MinMaxTemp, TodayDate, NexDaysTable, Cities}
 }
 </script>
 

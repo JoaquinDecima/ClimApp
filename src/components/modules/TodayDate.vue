@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-6 text-center">
     <div class="today">
-      <p class="day">{{weekday}} {{day}}</p>
+      <p class="day"><i class="fa fa-calendar" aria-hidden="true"></i> {{weekday}} {{day}}</p>
       <p class="date">{{month}} de {{year}}</p>
     </div>
   </div>

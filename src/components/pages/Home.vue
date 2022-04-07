@@ -1,16 +1,18 @@
 <template>
-  <main class="container">
+  <main class="container-fluid">
 
     <div class="row">
       <Cities/>
       <div class="col-md-6">
         <div class="container-fluid">
           <div class="row">
-
+            <TodayDate/>
           </div>
         </div>
       </div>
-      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <NexDaysTable/>
+      </div>
     </div>
 
   </main>
@@ -18,9 +20,11 @@
 
 <script>
 import Cities from "../modules/Cities.vue";
+import NexDaysTable from "../modules/NexDaysTable.vue";
+import TodayDate from "../modules/TodayDate.vue";
 export default {
   name: "Home",
-  components: {Cities}
+  components: {TodayDate, NexDaysTable, Cities}
 }
 </script>
 

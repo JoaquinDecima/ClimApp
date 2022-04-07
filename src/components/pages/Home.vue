@@ -7,6 +7,7 @@
         <div class="container-fluid">
           <div class="row">
             <TodayDate/>
+            <MinMaxTemp/>
           </div>
         </div>
       </div>
@@ -22,9 +23,10 @@
 import Cities from "../modules/Cities.vue";
 import NexDaysTable from "../modules/NexDaysTable.vue";
 import TodayDate from "../modules/TodayDate.vue";
+import MinMaxTemp from "../modules/MinMaxTemp.vue";
 export default {
   name: "Home",
-  components: {TodayDate, NexDaysTable, Cities}
+  components: {MinMaxTemp, TodayDate, NexDaysTable, Cities}
 }
 </script>
 

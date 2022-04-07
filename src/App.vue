@@ -1,10 +1,12 @@
 <script setup>
-import Footer from "./components/Footer.vue";
-import NavBar from "./components/NavBar.vue";
+import Home from "./components/pages/Home.vue";
+import Footer from "./components/partials/Footer.vue";
+import NavBar from "./components/partials/NavBar.vue";
 </script>
 
 <template>
   <NavBar />
+  <Home />
   <Footer/>
 </template>
 

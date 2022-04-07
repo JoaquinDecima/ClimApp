@@ -11,16 +11,32 @@
       </tr>
     </thead>
     <tbody>
-    <NextDaysRow/><NextDaysRow/><NextDaysRow/><NextDaysRow/><NextDaysRow/>
+    <NextDaysRow v-for="elem in nextWeatherData" :weather=elem />
     </tbody>
   </table>
 </template>
 
 <script>
-import NextDaysRow from "./NextDaysRow.vue";
+import NextDaysRow from "./NextDaysRow.vue"
+import {next, nextcity} from "../../service/api";
+import {getParams} from "../../service/routes";
+
+let data
+
+if (getParams()==undefined){
+  data = await next()
+} else {
+  data = await nextcity(getParams())
+}
+
 export default {
   name: "NexDaysTable",
-  components: {NextDaysRow}
+  components: {NextDaysRow},
+  data: () => {
+    return {
+      nextWeatherData: data
+    }
+  }
 }
 </script>
 

@@ -5,5 +5,4 @@ import { current, next } from "./service/api.js";
 const app = createApp(App)
 
 app.mount('#app')
-//app.config.globalProperties.$currentWeatherData = await current()
-//app.config.globalProperties.$nextWeatherData = await next()
+app.config.globalProperties.$currentWeatherData = await current()

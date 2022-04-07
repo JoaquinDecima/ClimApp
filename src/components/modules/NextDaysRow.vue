@@ -1,20 +1,21 @@
 <template>
   <tr class="text-center align-middle">
     <th scope="row">
-      <p class="day">25</p>
-      <p class="month">Septiembre</p>
+      <p class="day">{{new Intl.DateTimeFormat('es', { day: '2-digit' }).format(new Date(weather.dt * 1000))}}</p>
+      <p class="month">{{new Intl.DateTimeFormat('es', { month: 'long' }).format(new Date(weather.dt * 1000))}}</p>
     </th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-    <td>Otto</td>
-    <td>@mdo</td>
+    <td><img :src="'http://openweathermap.org/img/wn/'+weather.weather[0].icon+'@2x.png'" class="img-fluid table-img" /></td>
+    <td>{{weather.temp.min}}°C</td>
+    <td>{{weather.temp.max}}°C</td>
+    <td>{{weather.wind_speed}} Km/H</td>
+    <td>{{weather.humidity}} %</td>
   </tr>
 </template>
 
 <script>
 export default {
-  name: "NextDaysRow"
+  name: "NextDaysRow",
+  props: ['weather']
 }
 </script>
 
@@ -37,5 +38,9 @@ export default {
   .month{
     margin-top: 0px;
     padding-top: 0px;
+  }
+
+  .table-img{
+    max-height: 70px;
   }
 </style>

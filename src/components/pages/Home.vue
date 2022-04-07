@@ -10,6 +10,7 @@
             <MinMaxTemp/>
             <TodayWeather/>
             <TodayWind/>
+            <TodayHumidity/>
           </div>
         </div>
       </div>
@@ -28,9 +29,10 @@ import TodayDate from "../modules/TodayDate.vue";
 import MinMaxTemp from "../modules/MinMaxTemp.vue";
 import TodayWeather from "../modules/TodayWeather.vue";
 import TodayWind from "../modules/TodayWind.vue";
+import TodayHumidity from "../modules/TodayHumidity.vue";
 export default {
   name: "Home",
-  components: {TodayWind, TodayWeather, MinMaxTemp, TodayDate, NexDaysTable, Cities}
+  components: {TodayHumidity, TodayWind, TodayWeather, MinMaxTemp, TodayDate, NexDaysTable, Cities}
 }
 </script>
 

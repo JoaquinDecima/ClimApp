@@ -1,10 +1,18 @@
 <template>
-  <main class="container-fluid">
+  <main class="container">
+
     <div class="row">
+      <Cities/>
+      <div class="col-md-6">
+        <div class="container-fluid">
+          <div class="row">
 
-      <Cities></Cities>
-
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6"></div>
     </div>
+
   </main>
 </template>
 
@@ -18,7 +26,7 @@ export default {
 
 <style scoped>
   main{
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin: 15px auto;
+    padding: 0px 20px;
   }
 </style>

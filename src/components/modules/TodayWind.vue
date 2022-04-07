@@ -2,14 +2,15 @@
   <div class="col-md-6 text-center">
     <div class="wind">
       <p class="wind-title"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Viento</p>
-      <p class="wind-data">186 Km/h</p>
+      <p class="wind-data">{{speed}} Km/h</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TodayWind"
+  name: "TodayWind",
+  props: ["speed"]
 }
 </script>
 

@@ -2,14 +2,15 @@
   <div class="col-md-6 text-center">
     <div class="humidity">
       <p class="humidity-title"><i class="fa fa-tint" aria-hidden="true"></i> Humedad</p>
-      <p class="humidity-data">378%</p>
+      <p class="humidity-data">{{humidity}}%</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TodayHumidity"
+  name: "TodayHumidity",
+  props: ["humidity"]
 }
 </script>
 

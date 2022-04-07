@@ -4,7 +4,7 @@
       <div class="ratio ratio-21x9">
         <iframe
           className=""
-          src="https://embed.windy.com/embed2.html?lat=&lon=&detailLat=&detailLon=&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+          :src="'https://embed.windy.com/embed2.html?lat='+lat+'&lon='+lon+'&detailLat='+lat+'&detailLon='+lon+'&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1'"
           frameBorder="0">
         </iframe>
       </div>
@@ -13,9 +13,9 @@
 </template>
 
 <script>
-// https://embed.windy.com/embed2.html?lat='.concat(data.coord.lat).concat('&lon=').concat(data.coord.lon).concat('&detailLat=').concat(data.coord.lat).concat('&detailLon=').concat(data.coord.lon).concat('&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1')
 export default {
-  name: "Map"
+  name: "Map",
+  props: ["lon", "lat"]
 }
 </script>
 

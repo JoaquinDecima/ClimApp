@@ -3,10 +3,13 @@
     <div class="weather container-fluid text-center">
       <div class="row">
         <div class="col-md-6">
-          <p class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> El Impenetrable</p>
+          <p class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> {{city}}</p>
+          <img
+            :src="'http://openweathermap.org/img/wn/'+img+'@2x.png'"
+            class="img-fluid" />
         </div>
         <div class="col-md-6">
-          <p class="temp">32°C</p>
+          <p class="temp">{{temp}}°C</p>
         </div>
       </div>
     </div>
@@ -15,7 +18,8 @@
 
 <script>
 export default {
-  name: "TodayWeather"
+  name: "TodayWeather",
+  props: ["temp", "city", "img"]
 }
 </script>
 

@@ -2,10 +2,10 @@
   <div class="col-md-6 text-center">
     <div class="minmaxtemp">
       <p class="min">
-        <i class="fa fa-thermometer-empty" aria-hidden="true"></i> -25 °C
+        <i class="fa fa-thermometer-empty" aria-hidden="true"></i> {{min}} °C
       </p>
       <p class="max">
-        <i class="fa fa-thermometer-full" aria-hidden="true"></i> 49 °C
+        <i class="fa fa-thermometer-full" aria-hidden="true"></i> {{max}} °C
       </p>
     </div>
   </div>
@@ -13,7 +13,8 @@
 
 <script>
 export default {
-  name: "MinMaxTemp"
+  name: "MinMaxTemp",
+  props:["min", "max"]
 }
 </script>
 

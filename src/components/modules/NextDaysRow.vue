@@ -4,7 +4,11 @@
       <p class="day">{{new Intl.DateTimeFormat('es', { day: '2-digit' }).format(new Date(weather.dt * 1000))}}</p>
       <p class="month">{{new Intl.DateTimeFormat('es', { month: 'long' }).format(new Date(weather.dt * 1000))}}</p>
     </th>
-    <td><img :src="'http://openweathermap.org/img/wn/'+weather.weather[0].icon+'@2x.png'" class="img-fluid table-img" /></td>
+    <td>
+      <img
+        :src="'http://openweathermap.org/img/wn/'+weather.weather[0].icon+'@2x.png'"
+        class="img-fluid table-img" />
+    </td>
     <td>{{weather.temp.min}}°C</td>
     <td>{{weather.temp.max}}°C</td>
     <td>{{weather.wind_speed}} Km/H</td>

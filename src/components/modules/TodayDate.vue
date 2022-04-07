@@ -32,6 +32,7 @@ export default {
     background-color: rgba(20,20,20,0.6) !important;
     backdrop-filter: blur(6px);
     padding: 20px;
+    margin-bottom: 15px;
   }
 
   .day{
